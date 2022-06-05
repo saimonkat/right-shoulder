@@ -1,16 +1,17 @@
-// FIXES
+import "./spec"
 import "./fixes"
 
 import Router from './utils/Router';
-import common from './routes/common';
-import home from './routes/home';
+import components from './components';
+import pages from './pages';
 
-/** Populate Router instance with DOM routes */
 const routes = new Router({
-    common,
-    home,
+    components,
+    pages,
 })
 
 window.addEventListener("DOMContentLoaded", () => {
-    routes.loadEvents()
+    routes.loadEvents();
+    components.init();
+    pages.init();
 })

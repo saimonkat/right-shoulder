@@ -18,8 +18,9 @@ module.exports = {
     context: dirs.src,
     target: "web",
     entry: {
-        scripts: path.join(dirs.src, "scripts.js"),
-        main: path.join(dirs.src, "index.js"),
+        scripts: path.join(dirs.src, "index.js"),
+        // Separate scripts:
+        // home: path.join(dirs.src, "home.js"),
     },
     output: {
         path: dirs.dist,
@@ -89,3 +90,4 @@ module.exports = {
         ],
     }
 }
+
