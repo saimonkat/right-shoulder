@@ -69,8 +69,6 @@
   }
 
   &__logo {
-    @include link;
-
     @include media-up(md) {
       margin-right: 40px;
     }
