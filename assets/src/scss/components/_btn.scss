@@ -1,30 +1,40 @@
 .btn {
   display: inline-block;
-  width: 100%;
-  padding: 10px 20px;
-  font-family: $font;
+  padding: 12px 24px;
   background: $color-main;
+  line-height: 24px;
   color: #fff;
   user-select: none;
   text-align: center;
-  transition: background-color .3s;
-  border-radius: 24px;
+  transition: background-color .2s;
   cursor: pointer;
 
-  @include media-up(md) {
-    width: fit-content;
-    min-width: 160px;
-    padding: 10px 25px;
+  &:hover {
+    background-color: $color-hover;
   }
 
-  @include media-up(lg) {
-    padding: 10px 40px;
+  &:active {
+    background-color: $color-active;
   }
 
-  &--icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+  &--white {
+    background: #fff;
+    color: $color-main;
+    transition: color .2s;
+
+    &:hover {
+      color: $color-hover;
+    }
+
+    &:active {
+      color: $color-active;
+    }
+  }
+
+  &--big {
+    @include media-up(md) {
+      font-size: 20px;
+      padding: 16px 32px;
+    }
   }
 }

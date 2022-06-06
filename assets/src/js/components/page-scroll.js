@@ -2,7 +2,7 @@ export default function(){
     const pageScroll = () => {
         document.documentElement.classList.toggle(
             'page-scrolled',
-            window.scrollY > 50
+            window.scrollY > 0
         )
     }
 

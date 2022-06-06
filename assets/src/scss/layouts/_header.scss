@@ -1,9 +1,72 @@
 .header {
-  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 8px 0;
+  transition-property: background-color, box-shadow;
+  transition-duration: .25s;
+
+  @include media-up(md) {
+    padding: 12px 0;
+  }
+
+  @include media-up(lg) {
+    #wpadminbar ~ & {
+      top: 32px;
+    }
+  }
+
+  .page-scrolled & {
+    background: $color-light;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__logo {
+    @include link;
+
+    @include media-up(xl) {
+      margin-right: 100px;
+    }
+  }
+
+  &__nav {
+    @include media-up(xl) {
+      margin-right: auto;
+    }
+  }
+
+  &__contacts {
+    @include media-down(sm) {
+      display: none;
+    }
+
+    @include media-up(xl) {
+      margin-right: 40px;
+    }
+
+    a {
+      display: block;
+      width: fit-content;
+      @include link;
+
+      &:first-child {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      &:last-child {
+        font-size: 14px;
+        line-height: 20px;
+        opacity: 0.4;
+      }
+    }
   }
 }

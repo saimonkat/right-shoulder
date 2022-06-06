@@ -34,8 +34,8 @@ module.exports = {
             '@': dirs.src,
             '@js': path.join(dirs.src, "js"),
             '@scss': path.join(dirs.src, "scss"),
-            '@images': path.join(dirs.src, "images"),
-            '@icons': path.join(dirs.src, "images", "icons"),
+            '@images': path.join(dirs.src, "img"),
+            '@icons': path.join(dirs.src, "img", "icons"),
             '@fonts': path.join(dirs.src, "fonts"),
         },
     },
@@ -65,7 +65,7 @@ module.exports = {
         new ImageminWebpWebpackPlugin({
             config: [{
                 test: /\.(jpe?g|png)/,
-                exclude: ["src/images/favicon"],
+                exclude: ["src/img/favicon"],
                 options: {
                     quality: 80
                 }
@@ -74,8 +74,8 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.join(dirs.src, "images"),
-                    to: path.join(dirs.dist, "images"),
+                    from: path.join(dirs.src, "img"),
+                    to: path.join(dirs.dist, "img"),
                 }
             ]
         })

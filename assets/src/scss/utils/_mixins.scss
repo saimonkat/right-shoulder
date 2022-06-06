@@ -95,7 +95,6 @@
 }
 
 @mixin link {
-  color: $color-main;
   transition: color .15s;
 
   &:hover {
@@ -105,4 +104,9 @@
   &:active {
     color: $color-active;
   }
+}
+
+@mixin title {
+  font-family: $font-title;
+  font-style: italic;
 }

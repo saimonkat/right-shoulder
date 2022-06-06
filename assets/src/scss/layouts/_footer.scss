@@ -1,3 +1,14 @@
 .footer {
+  padding: 8px 0;
+  color: #fff;
 
+  @include media-up(md) {
+    padding: 12px 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
