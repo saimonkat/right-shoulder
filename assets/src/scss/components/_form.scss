@@ -9,9 +9,7 @@
   }
 
   &__text {
-    margin-bottom: 20px;
-    font-weight: bold;
-    opacity: 0.3;
+    @include subtitle;
   }
 
   &__fields {
@@ -34,7 +32,9 @@
   }
 
   .btn {
-    width: 100%;
+    @include media-down(sm) {
+      width: 100%;
+    }
 
     @include media-up(md) {
       flex-shrink: 0;

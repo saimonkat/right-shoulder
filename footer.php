@@ -2,7 +2,7 @@
 
 <footer class="footer">
     <div class="footer__content container">
-        <form action="#" class="footer__form form">
+        <form action="#" class="footer__form form wow fadeInUp">
             <div class="footer__title h2">Давайте начнём</div>
             <div class="form__fields">
                 <input type="phone"
@@ -43,7 +43,7 @@
 
 <div class="modal" id="modal-call">
     <form action="#" class="modal__form form">
-        <div class="form__title h4">Давайте начнём</div>
+        <div class="form__title h3">Давайте начнём</div>
         <div class="form__text">Мы перезвоним в течении 15 минут</div>
         <div class="form__fields">
             <input type="phone"

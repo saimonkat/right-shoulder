@@ -120,6 +120,13 @@
   font-style: italic;
 }
 
+@mixin subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  opacity: 0.3;
+}
+
 @mixin first-section {
   padding-top: 64px;
 
