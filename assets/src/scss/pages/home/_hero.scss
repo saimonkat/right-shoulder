@@ -1,0 +1,135 @@
+.hero {
+  height: 100vh;
+  height: var(--app-height);
+  @include first-section;
+  padding-bottom: 0;
+  background: $color-light;
+
+  &__container {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    @include media-up(md) {
+      height: 75%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    @include media-down(sm) {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+    }
+
+    @include media-up(md) {
+      width: 630px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    width: fit-content;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: -70%;
+      bottom: -20px;
+      display: block;
+      width: 150px;
+      padding-top: 55%;
+      background-image: url(../img/base/pen.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @include media-up(md) {
+        width: 243px;
+      }
+
+      @include media-up(xl) {
+        right: -55%;
+      }
+    }
+  }
+
+  &__text {
+    width: 215px;
+
+    @include media-up(md) {
+      width: 365px;
+    }
+
+    &.wow-init {
+      opacity: 0.4;
+    }
+  }
+
+  &__buttons {
+    margin-top: auto;
+
+    @include media-up(md) {
+      display: flex;
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      @include media-down(sm) {
+        width: 100%;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    pointer-events: none;
+
+    img {
+      position: absolute;
+
+      &:first-child {
+        position: absolute;
+        z-index: 1;
+        right: -70px;
+        bottom: -280px;
+        width: 420px;
+
+        @include media-up(lg) {
+          bottom: auto;
+          top: 0;
+          right: 0;
+          width: 40%;
+          max-height: 100%;
+          object-fit: contain;
+          object-position: right;
+        }
+      }
+
+      &:last-child {
+        position: absolute;
+        left: -60px;
+        bottom: 0;
+        width: 380px;
+
+        @include media-up(md) {
+          left: 0;
+          width: 37%;
+        }
+      }
+    }
+  }
+}

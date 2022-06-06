@@ -1,0 +1,50 @@
+@import "~@fancyapps/ui/dist/fancybox";
+
+.fancybox {
+  &__backdrop {
+    background: rgba(12, 40, 46, 0.64);
+  }
+
+  &__slide {
+    @include media-down(sm) {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    padding: 0;
+
+    @include media-down(sm) {
+      min-height: 100vh;
+    }
+
+    .fancybox-change & {
+      animation-duration: 0s;
+    }
+
+    .carousel__button.is-close {
+      top: 12px;
+      right: 12px;
+      width: 32px;
+      height: 32px;
+      color: $color-black;
+
+      @include media-up(md) {
+        top: 32px;
+        right: 32px;
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
+        filter: none;
+      }
+    }
+
+    :focus {
+      outline: inherit !important;
+      box-shadow: inherit !important;
+    }
+  }
+}

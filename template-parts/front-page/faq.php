@@ -1,4 +1,4 @@
-<section class="banner section">
+<section class="faq section" id="faq">
     <div class="container">
         
     </div>

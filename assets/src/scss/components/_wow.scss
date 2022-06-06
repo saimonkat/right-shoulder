@@ -10,10 +10,26 @@
   }
 }
 
-.wow.fadeInUp {
+.fadeInUp {
   transform: translateY(50px);
 
   &.wow-init {
     transform: translateY(0);
+  }
+}
+
+.fadeInRight {
+  transform: translateX(-100px);
+
+  &.wow-init {
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  transform: translateX(100px);
+
+  &.wow-init {
+    transform: translateX(0);
   }
 }

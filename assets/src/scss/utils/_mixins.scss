@@ -106,7 +106,23 @@
   }
 }
 
+@mixin link-underline {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 @mixin title {
   font-family: $font-title;
   font-style: italic;
+}
+
+@mixin first-section {
+  padding-top: 64px;
+
+  @include media-up(md) {
+    padding-top: 72px;
+  }
 }

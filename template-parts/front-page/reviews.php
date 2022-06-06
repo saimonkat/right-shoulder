@@ -1,4 +1,4 @@
-<section class="banner section">
+<section class="reviews section" id="reviews">
     <div class="container">
         
     </div>

@@ -1,9 +1,11 @@
 .footer {
-  padding: 8px 0;
+  position: relative;
+  padding: 40px 0 20px;
   color: #fff;
+  background: $color-main;
 
   @include media-up(md) {
-    padding: 12px 0;
+    padding: 60px 0 20px;
   }
 
   &__content {

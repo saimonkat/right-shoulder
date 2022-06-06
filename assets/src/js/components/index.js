@@ -4,6 +4,7 @@ import forms from './forms';
 import textarea from './textarea';
 import wow from './wow';
 import sliders from './sliders';
+import fancybox from './fancybox';
 
 export default {
     init() {
@@ -13,6 +14,7 @@ export default {
         textarea();
         wow();
         sliders();
+        fancybox();
 		console.log("components scripts loaded");
     },
     finalize() {}

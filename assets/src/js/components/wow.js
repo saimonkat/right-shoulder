@@ -30,7 +30,7 @@ export default function() {
     }
 
     if (scrollEls) {
-        window.addEventListener('DOMContentLoaded', handleScroll);
+        handleScroll();
         window.addEventListener("scroll", handleScroll);
     }
 }

@@ -1,4 +1,4 @@
-<section class="banner section">
+<section class="blog section" id="blog">
     <div class="container">
         
     </div>

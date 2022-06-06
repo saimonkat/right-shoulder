@@ -6,29 +6,22 @@
   color: #fff;
   user-select: none;
   text-align: center;
-  transition: background-color .2s;
+  transition: .2s;
   cursor: pointer;
 
   &:hover {
     background-color: $color-hover;
+    color: #fff;
   }
 
   &:active {
     background-color: $color-active;
+    color: #fff;
   }
 
   &--white {
     background: #fff;
     color: $color-main;
-    transition: color .2s;
-
-    &:hover {
-      color: $color-hover;
-    }
-
-    &:active {
-      color: $color-active;
-    }
   }
 
   &--big {
