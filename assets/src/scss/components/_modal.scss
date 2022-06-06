@@ -14,30 +14,15 @@
     padding: 32px;
   }
 
-  &__title {
-    @include title;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-
-  &__text {
-    margin-bottom: 20px;
-    font-weight: bold;
-    opacity: 0.3;
-  }
-
   &__form {
-    .btn {
-      width: 100%;
-      margin-top: 40px;
+    .form__title {
+      font-size: 24px;
     }
-  }
 
-  &__policy {
-    margin-top: 20px;
-
-    a {
-      @include link-underline;
+    .form__fields {
+      @include media-up(md) {
+        flex-direction: column;
+      }
     }
   }
 }

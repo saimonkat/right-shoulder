@@ -6,11 +6,115 @@
 
   @include media-up(md) {
     padding: 60px 0 20px;
+    background-image: url(../img/base/case-right.png);
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: right bottom;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 150px;
+      background: linear-gradient(180deg, #1C5D6B00 0%, #1C5D6B 100%);
+    }
+  }
+
+  @include media-up(xl) {
+    background-size: auto 80%;
   }
 
   &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__form {
+    margin-bottom: 40px;
+
+    @include media-up(md) {
+      margin-bottom: 80px;
+    }
+
+    input {
+      background: $color-main;
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .btn {
+      @include media-up(md) {
+        width: auto;
+      }
+    }
+
+    .form__policy {
+      @include media-up(md) {
+        max-width: 80%;
+      }
+
+      a {
+        @include link-underline(#fff);
+      }
+    }
+  }
+
+  &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__logo {
+    @include link;
+
+    @include media-up(md) {
+      margin-right: 40px;
+    }
+
+    @include media-up(lg) {
+      margin-right: 90px;
+    }
+  }
+
+  &__contacts {
+    @include media-down(sm) {
+      display: none;
+    }
+
+    @include media-up(md) {
+      margin-right: auto;
+    }
+
+    a {
+      display: block;
+      width: fit-content;
+
+      &:first-child {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      &:last-child {
+        font-size: 14px;
+        line-height: 20px;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__copyright {
+    img {
+      margin: 0 auto 9px;
+    }
+
+    span {
+      font-size: 12px;
+      opacity: 0.7;
+    }
   }
 }

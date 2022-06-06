@@ -1,0 +1,49 @@
+.form {
+  &__title {
+    @include title;
+    margin-bottom: 20px;
+
+    @include media-up(md) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 0.3;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include media-up(md) {
+      flex-direction: row;
+      max-width: 830px;
+    }
+  }
+
+  &__policy {
+    margin-top: 20px;
+
+    a {
+      @include link-underline(#000);
+    }
+  }
+
+  .btn {
+    width: 100%;
+
+    @include media-up(md) {
+      flex-shrink: 0;
+    }
+  }
+}
+
+input {
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid $color-gray;
+}

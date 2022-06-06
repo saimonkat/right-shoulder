@@ -106,11 +106,12 @@
   }
 }
 
-@mixin link-underline {
-  text-decoration: underline;
+@mixin link-underline($color) {
+  border-bottom: 1px solid $color;
+  transition: border-color .15s;
 
   &:hover {
-    text-decoration: none;
+    border-color: transparent;
   }
 }
 
