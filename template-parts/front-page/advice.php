@@ -1,6 +1,6 @@
 <section class="advice section">
     <div class="container">
-        <div class="advice__content">
+        <div class="advice__content wow fadeInUp">
             <div class="advice__subtitle">Что делать при возникновении спора</div>
             <h2 class="advice__title">Главное: не паниковать.</h2>
             <div class="advice__text">

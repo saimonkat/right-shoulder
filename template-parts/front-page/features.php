@@ -1,6 +1,6 @@
 <section class="features section">
     <div class="container">
-        <div class="features__content">
+        <div class="features__content wow fadeInUp">
             <h2 class="features__title">Что мы можем вам<br> предложить</h2>
             <div class="features__text">У нас доступно много специализаций<br> юридической помощи</div>
         </div>
