@@ -1,7 +1,7 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13 17.5L32 12L50.5 17.5" stroke="#0C282E" stroke-width="1.5" stroke-linejoin="bevel"/>
-<circle cx="40" cy="25" r="6" stroke="#0C282E" stroke-width="1.5" stroke-linejoin="bevel"/>
-<circle cx="24" cy="25" r="6" stroke="#0C282E" stroke-width="1.5" stroke-linejoin="bevel"/>
-<path d="M14 54V45.5C14 39.4249 18.9249 34.5 25 34.5H38.5C44.5751 34.5 49.5 39.4249 49.5 45.5V54" stroke="#0C282E" stroke-width="1.5" stroke-linejoin="bevel"/>
-<path d="M31.5 34.5L27 43.5H38.5L27 55" stroke="#0C282E" stroke-width="1.5"/>
+<path d="M13 17.5L32 12L50.5 17.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/>
+<circle cx="40" cy="25" r="6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/>
+<circle cx="24" cy="25" r="6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M14 54V45.5C14 39.4249 18.9249 34.5 25 34.5H38.5C44.5751 34.5 49.5 39.4249 49.5 45.5V54" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M31.5 34.5L27 43.5H38.5L27 55" stroke="currentColor" stroke-width="1.5"/>
 </svg>

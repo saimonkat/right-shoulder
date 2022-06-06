@@ -1,0 +1,31 @@
+.swiper-horizontal {
+  position: relative;
+}
+
+.swiper-navigation {
+  position: absolute;
+  right: 0;
+  top: -88px;
+  display: flex;
+  gap: 20px;
+
+  @include media-down(sm) {
+    display: none;
+  }
+}
+
+.swiper-btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #E2E7EB;
+  border-radius: 40px;
+  cursor: pointer;
+
+  &--prev {
+
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}

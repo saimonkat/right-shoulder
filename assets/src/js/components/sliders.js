@@ -1,29 +1,22 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
+import Swiper, { Navigation } from 'swiper';
+Swiper.use([Navigation]);
 
 export default function () {
-    const testSlider = document.querySelector('.test-slider');
+    const featuresSlider = document.querySelector('.features__slider');
 
-    testSlider && new Swiper(testSlider, {
+    featuresSlider && new Swiper(featuresSlider, {
         direction: "horizontal",
-        slidesPerView: 1,
-        autoHeight: true,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-btn--next',
+            prevEl: '.swiper-btn--prev',
         },
         speed: 700,
+        spaceBetween: 10,
         breakpoints: {
             992: {
-
+                spaceBetween: 20
             }
-        },
-        on: {
-            slideChangeTransitionEnd: function() {
-
-            },
         },
     });
 }
