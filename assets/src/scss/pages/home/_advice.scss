@@ -1,3 +1,9 @@
 .advice {
+  &__content {
+    max-width: 630px;
+  }
 
+  &__subtitle {
+    @include subtitle;
+  }
 }
