@@ -36,11 +36,15 @@
     position: relative;
     width: fit-content;
 
+    @include media-up(md) {
+      margin-bottom: 30px;
+    }
+
     &:after {
       content: '';
       position: absolute;
-      right: -70%;
-      bottom: -20px;
+      right: -65%;
+      bottom: -12px;
       display: block;
       width: 150px;
       padding-top: 55%;
@@ -49,11 +53,14 @@
       background-repeat: no-repeat;
 
       @include media-up(md) {
+        right: -70%;
+        bottom: -18px;
         width: 243px;
       }
 
       @include media-up(xl) {
-        right: -55%;
+        right: -51%;
+        bottom: -30px;
       }
     }
   }

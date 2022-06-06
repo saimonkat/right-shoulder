@@ -1,4 +1,4 @@
-<section class="hero section">
+<section class="hero section" id="hero">
     <div class="hero__container container">
         <div class="hero__content">
             <h1 class="hero__title wow fadeInUp" data-wow-delay="200">
