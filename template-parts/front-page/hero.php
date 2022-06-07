@@ -22,15 +22,13 @@
         </div>
     </div>
     <div class="hero__bg">
-        <img src="<?= DIST_URI ?>/img/base/hero-case.png"
-             class="wow fadeInLeft" 
-             loading="eager" 
-             decoding="sync" 
-             alt="">
-        <img src="<?= DIST_URI ?>/img/base/case-left.png" 
-             class="wow fadeInRight"
-             loading="eager" 
-             decoding="sync" 
-             alt="">
+        <picture class="wow fadeInLeft">
+            <source srcset="<?= DIST_URI ?>/img/base/hero-case.webp" type="image/webp">
+            <img src="<?= DIST_URI ?>/img/base/hero-case.png" alt="">
+        </picture>
+        <picture class="wow fadeInRight">
+            <source srcset="<?= DIST_URI ?>/img/base/case-left.webp" type="image/webp">
+            <img src="<?= DIST_URI ?>/img/base/case-left.png" alt="">
+        </picture>
     </div>
 </section>

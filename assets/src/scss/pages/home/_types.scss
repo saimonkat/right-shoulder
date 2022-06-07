@@ -15,6 +15,7 @@
   position: relative;
   height: 375px;
   background: $color-ghost;
+  overflow: hidden;
 
   &--blue {
     background: $color-main;
@@ -76,15 +77,13 @@
 
   &__img {
     position: absolute;
-    left: 50%;
+    left: 15%;
     bottom: 0;
     width: 70%;
-    transform: translateX(-50%);
 
     #{$self}--blue & {
       left: auto;
       right: 0;
-      transform: none;
     }
   }
 

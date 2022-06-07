@@ -11,11 +11,10 @@
                     </div>
                     <a href="#" class="type__btn btn">Подробнее</a>
                 </div>
-                <img src="<?= DIST_URI ?>/img/base/case-bottom.png" 
-                     class="type__img"
-                     loading="eager" 
-                     decoding="sync" 
-                     alt="">
+                <picture class="type__img wow fadeInUp" data-wow-delay="">
+                    <source srcset="<?= DIST_URI ?>/img/base/case-bottom.webp" type="image/webp">
+                    <img src="<?= DIST_URI ?>/img/base/case-bottom.png" alt="">
+                </picture>
             </div>
             <div class="types__item type type--blue wow fadeInUp" data-wow-delay="200">
                 <div class="type__content">
@@ -27,11 +26,10 @@
                     </div>
                     <a href="#" class="type__btn btn btn--white">Подробнее</a>
                 </div>
-                <img src="<?= DIST_URI ?>/img/base/cases-right-2.png" 
-                     class="type__img"
-                     loading="eager" 
-                     decoding="sync" 
-                     alt="">
+                <picture class="type__img wow fadeInUp" data-wow-delay="200">
+                    <source srcset="<?= DIST_URI ?>/img/base/cases-right-2.webp" type="image/webp">
+                    <img src="<?= DIST_URI ?>/img/base/cases-right-2.png" alt="">
+                </picture>
             </div>
         </div>
     </div>

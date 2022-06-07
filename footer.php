@@ -7,10 +7,10 @@
             <div class="form__fields">
                 <input type="tel"
                     placeholder="+7 (999) 999-99-99"
-                    required></input>
+                    required=""></input>
                 <input type="text"
                     placeholder="Имя"
-                    required></input>
+                    required=""></input>
                 <button type="submit" class="btn btn--white">
                     Перезвонить мне
                 </button>
@@ -30,11 +30,15 @@
                 </div>
             </a>
             <div class="footer__contacts">
-                <a href="tel:8 800-999-99-99">8 800-999-99-99</a>
+                <a href="tel:+78009999999">8 800-999-99-99</a>
                 <a href="mailto:example@domain.com">example@domain.com</a>
             </div>
             <div class="footer__copyright">
-                <img src="<?= DIST_URI ?>/img/icons/ab.svg" loading="eager" decoding="sync" alt="">
+                <img 
+                    src="<?= DIST_URI ?>/img/icons/ab.svg" 
+                    width="51" 
+                    height="25" 
+                    alt="">
                 <span>Сделано с любовью</span>
             </div>
         </div>
@@ -48,10 +52,10 @@
         <div class="form__fields">
             <input type="tel"
                 placeholder="+7 (999) 999-99-99"
-                required></input>
+                required=""></input>
             <input type="text"
                 placeholder="Имя"
-                required></input>
+                required=""></input>
             <button type="submit" class="btn">Перезвонить мне</button>
         </div>
         <div class="form__policy">

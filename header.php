@@ -58,7 +58,7 @@
             </nav>
 
             <div class="header__contacts">
-                <a href="tel:8 800-999-99-99">8 800-999-99-99</a>
+                <a href="tel:+78009999999">8 800-999-99-99</a>
                 <a href="mailto:example@domain.com">example@domain.com</a>
             </div>
 

@@ -15,6 +15,10 @@
   }
 
   &__form {
+    .form__title {
+      margin-bottom: 20px;
+    }
+
     .form__fields {
       @include media-up(md) {
         flex-direction: column;

@@ -10,6 +10,7 @@
 
   &__text {
     @include subtitle;
+    margin-bottom: 20px;
   }
 
   &__fields {
