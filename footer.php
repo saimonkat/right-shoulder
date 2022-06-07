@@ -5,7 +5,7 @@
         <form action="#" class="footer__form form wow fadeInUp">
             <div class="footer__title h2">Давайте начнём</div>
             <div class="form__fields">
-                <input type="phone"
+                <input type="tel"
                     placeholder="+7 (999) 999-99-99"
                     required></input>
                 <input type="text"
@@ -46,7 +46,7 @@
         <div class="form__title h3">Давайте начнём</div>
         <div class="form__text">Мы перезвоним в течении 15 минут</div>
         <div class="form__fields">
-            <input type="phone"
+            <input type="tel"
                 placeholder="+7 (999) 999-99-99"
                 required></input>
             <input type="text"
