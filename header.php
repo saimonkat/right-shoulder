@@ -39,23 +39,23 @@
                 </div>
             </a>
 
-            <?php /*
+            <?php
                 $args = array(
                     'theme_location' => 'header-menu',
                     'container' => 'nav',
                     'menu_class' => 'header__nav nav',
                 );
                 wp_nav_menu($args);
-            */ ?>
+            ?>
 
-            <nav class="header__nav nav">
-                <ul>
+            <!-- <nav class="menu-header-container">
+                <ul class="header__nav nav">
                     <li><a href="#blog">Блог</a></li>
                     <li><a href="#reviews">Отзывы</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
-            </nav>
+            </nav> -->
 
             <div class="header__contacts">
                 <?php 

@@ -5,8 +5,7 @@
   top: 0;
   width: 100%;
   padding: 8px 0;
-  transition-property: background-color, box-shadow;
-  transition-duration: .25s;
+  transition: .25s;
 
   @include media-up(md) {
     padding: 12px 0;
@@ -19,8 +18,8 @@
   }
 
   .page-scrolled & {
-    background: $color-ghost;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: $color-ghost-80;
+    backdrop-filter: saturate(180%) blur(20px);
   }
 
   &__content {
