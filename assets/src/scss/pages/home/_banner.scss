@@ -1,3 +1,17 @@
 .banner {
+  &__container {
+    @include media-down(sm) {
+      padding: 0;
+    }
+  }
 
+  &__content {
+    padding: 40px 20px;
+    background: $color-main;
+    color: #fff;
+
+    @include media-up(md) {
+      padding: 40px;
+    }
+  }
 }
