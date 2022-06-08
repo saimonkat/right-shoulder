@@ -48,15 +48,6 @@
                 wp_nav_menu($args);
             ?>
 
-            <!-- <nav class="menu-header-container">
-                <ul class="header__nav nav">
-                    <li><a href="#blog">Блог</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav> -->
-
             <div class="header__contacts">
                 <?php 
                     $phone = get_field('phone', 'option');
