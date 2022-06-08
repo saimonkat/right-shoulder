@@ -20,6 +20,7 @@
             </div>
         </div>
     </div>
+    
     <div class="hero__bg">
         <picture class="wow fadeInLeft">
             <source srcset="<?= DIST_URI ?>/img/base/hero-case.webp" 
