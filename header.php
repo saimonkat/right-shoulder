@@ -64,8 +64,7 @@
 
             <button class="header__btn btn" 
                     data-fancybox 
-                    data-src="#modal-call" 
-                    role="button">
+                    data-src="#modal-call">
                 Перезвонить мне
             </button>
         </div>

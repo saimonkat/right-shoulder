@@ -105,24 +105,34 @@
     height: 100vh;
     pointer-events: none;
 
-    & > * {
+    picture {
       position: absolute;
 
       &:first-child {
         position: absolute;
         z-index: 1;
-        right: -70px;
-        bottom: -280px;
-        width: 420px;
+        bottom: -230px;
+        right: -50px;
+        width: 100vw;
+        height: 100vh;
+
+        @include media-up(md) {
+          width: 70vw;
+          height: 70vw;
+        }
 
         @include media-up(lg) {
-          bottom: auto;
-          top: 0;
+          bottom: 5%;
           right: 0;
           width: 40%;
+          height: auto;
           max-height: 100%;
           object-fit: contain;
           object-position: right;
+        }
+
+        img {
+          object-position: right center;
         }
       }
 
@@ -130,12 +140,28 @@
         position: absolute;
         left: -60px;
         bottom: 0;
-        width: 380px;
+        width: 100vw;
+        height: 45vh;
+
+        @include media-up(md) {
+          left: 0;
+          width: 50%;
+        }
 
         @include media-up(md) {
           left: 0;
           width: 37%;
         }
+
+        img {
+          object-position: left bottom;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
   }

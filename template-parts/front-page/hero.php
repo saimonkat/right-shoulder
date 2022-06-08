@@ -10,8 +10,7 @@
             <div class="hero__buttons wow fadeInUp" data-wow-delay="400">
                 <button class="btn btn--big" 
                         data-fancybox 
-                        data-src="#modal-call" 
-                        role="button">
+                        data-src="#modal-call">
                     Перезвонить мне
                 </button>
                 <a href="https://wa.me/88009999999" 
@@ -23,12 +22,17 @@
     </div>
     <div class="hero__bg">
         <picture class="wow fadeInLeft">
-            <source srcset="<?= DIST_URI ?>/img/base/hero-case.webp" type="image/webp">
-            <img src="<?= DIST_URI ?>/img/base/hero-case.png" alt="">
+            <source srcset="<?= DIST_URI ?>/img/base/hero-case.webp" 
+                type="image/webp">
+            <img src="<?= DIST_URI ?>/img/base/hero-case.png"
+                data-src="<?= DIST_URI ?>/img/base/hero-case.png" 
+                alt="">
         </picture>
         <picture class="wow fadeInRight">
             <source srcset="<?= DIST_URI ?>/img/base/case-left.webp" type="image/webp">
-            <img src="<?= DIST_URI ?>/img/base/case-left.png" alt="">
+            <img src="<?= DIST_URI ?>/img/base/case-left.png"
+                data-src="<?= DIST_URI ?>/img/base/case-left.png"
+                alt="">
         </picture>
     </div>
 </section>

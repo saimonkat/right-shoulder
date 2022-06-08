@@ -7,10 +7,10 @@
             <div class="form__fields">
                 <input type="tel"
                     placeholder="+7 (999) 999-99-99"
-                    required=""></input>
+                    required=""/>
                 <input type="text"
                     placeholder="Имя"
-                    required=""></input>
+                    required=""/>
                 <button type="submit" class="btn btn--white">
                     Перезвонить мне
                 </button>
@@ -52,10 +52,10 @@
         <div class="form__fields">
             <input type="tel"
                 placeholder="+7 (999) 999-99-99"
-                required=""></input>
+                required=""/>
             <input type="text"
                 placeholder="Имя"
-                required=""></input>
+                required=""/>
             <button type="submit" class="btn">Перезвонить мне</button>
         </div>
         <div class="form__policy">

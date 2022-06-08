@@ -41,6 +41,12 @@ function enqueue_theme_style_scripts()
 
 add_action('wp_enqueue_scripts', 'enqueue_theme_style_scripts');
 
+// Lazyload fix
+function nonoscript_lazyload($in) {
+   return str_replace( '<noscript><style>.lazyload{display:none;}</style></noscript>', '', $in ) ;
+}
+add_filter( 'autoptimize_filter_imgopt_lazyload_cssoutput', 'nonoscript_lazyload');
+
 require get_template_directory() . '/app/vendor/autoload.php';
 require get_template_directory() . '/app/init.php';
 
