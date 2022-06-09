@@ -9,13 +9,12 @@ import fancybox from './fancybox';
 export default {
     init() {
         pageScroll();
-        anchorScroll();
+        // anchorScroll();
         forms();
         textarea();
         wow();
         sliders();
         fancybox();
-		console.log("components scripts loaded");
     },
     finalize() {}
 }
