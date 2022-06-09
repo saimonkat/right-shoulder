@@ -8,8 +8,8 @@ export default function () {
         direction: "horizontal",
         slidesPerView: 'auto',
         navigation: {
-            nextEl: '.swiper-btn--next',
-            prevEl: '.swiper-btn--prev',
+            nextEl: '.swiper-button--next',
+            prevEl: '.swiper-button--prev',
         },
         speed: 700,
         spaceBetween: 10,
