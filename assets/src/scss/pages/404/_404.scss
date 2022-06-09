@@ -9,7 +9,12 @@
   }
 
   &__title {
-    margin-bottom: 40px;
+    font-size: 100px;
+    line-height: 1;
+  }
+
+  &__text {
+    margin-bottom: 30px;
   }
 
   &__btn {
