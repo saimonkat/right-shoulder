@@ -72,8 +72,6 @@
     </form>
 </div>
 
-</div><!-- /.wrapper -->
-
 <?php wp_footer(); ?>
 
 </body>

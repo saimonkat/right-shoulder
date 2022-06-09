@@ -68,6 +68,5 @@
             </button>
         </div>
     </header>
-
-    <div class="wrapper">
-        <main class="main">
+    
+    <main class="main">
