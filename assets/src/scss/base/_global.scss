@@ -66,6 +66,16 @@ h3, .h3 {
   }
 }
 
+p {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .section {
   position: relative;
   padding: 40px 0;
