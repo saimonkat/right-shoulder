@@ -55,7 +55,7 @@
 
 <div class="modal" id="modal-call">
     <form action="#" class="modal__form form">
-        <div class="form__title h3">Давайте начнём</div>
+        <div class="form__title">Давайте начнём</div>
         <div class="form__text">Мы перезвоним в течении 15 минут</div>
         <div class="form__fields">
             <input type="tel"
