@@ -27,6 +27,12 @@
     background-size: auto 80%;
   }
 
+  &__title {
+    @include media-up(md) {
+      margin-bottom: 32px;
+    }
+  }
+
   &__content {
     position: relative;
     z-index: 1;

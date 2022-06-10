@@ -14,7 +14,7 @@
                             alt="">
                     </picture>
                     <div class="blog-post__content">
-                        <div class="blog-post__title">
+                        <div class="blog-post__title h3">
                             Перечень документов, необходимых для процедуры банкротства физического лица
                         </div>
                         <div class="blog-post__text">
@@ -32,7 +32,7 @@
                             alt="">
                     </picture>
                     <div class="blog-post__content">
-                        <div class="blog-post__title">
+                        <div class="blog-post__title h3">
                             Перечень документов, необходимых для процедуры банкротства физического лица
                         </div>
                         <div class="blog-post__text">
@@ -50,7 +50,7 @@
                             alt="">
                     </picture>
                     <div class="blog-post__content">
-                        <div class="blog-post__title">
+                        <div class="blog-post__title h3">
                             Перечень документов, необходимых для процедуры банкротства физического лица
                         </div>
                         <div class="blog-post__text">
@@ -68,7 +68,7 @@
                             alt="">
                     </picture>
                     <div class="blog-post__content">
-                        <div class="blog-post__title">
+                        <div class="blog-post__title h3">
                             Перечень документов, необходимых для процедуры банкротства физического лица
                         </div>
                         <div class="blog-post__text">
@@ -86,7 +86,7 @@
                             alt="">
                     </picture>
                     <div class="blog-post__content">
-                        <div class="blog-post__title">
+                        <div class="blog-post__title h3">
                             Перечень документов, необходимых для процедуры банкротства физического лица
                         </div>
                         <div class="blog-post__text">

@@ -47,16 +47,7 @@
   }
 
   &__title {
-    @include title;
     margin-bottom: 12px;
-
-    @include media-up(md) {
-      font-size: 20px;
-    }
-
-    @include media-up(xl) {
-      font-size: 24px;
-    }
   }
 
   &__text {

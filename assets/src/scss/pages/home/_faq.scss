@@ -1,3 +1,78 @@
 .faq {
+  &__wrapper {
+    display: grid;
+    gap: 40px;
 
+    @include media-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__content {
+
+  }
+}
+
+.faq-item {
+  $self: &;
+  border-top: 1px solid #E2E7EB;
+  transition: padding .3s;
+
+  &.active {
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: padding .3s;
+
+    #{$self}.active & {
+      padding: 16px 0;
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $color-ghost;
+    transition: transform .3s;
+
+    #{$self}.active & {
+      transform: rotate(135deg);
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 12px;
+      height: 1px;
+      background: #000;
+    }
+
+    &:after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+
+  &__text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-out;
+  }
 }
