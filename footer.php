@@ -30,8 +30,16 @@
                 </div>
             </a>
             <div class="footer__contacts">
-                <a href="tel:+78009999999">8 800-999-99-99</a>
-                <a href="mailto:example@domain.com">example@domain.com</a>
+                <?php 
+                    $phone = get_field('phone', 'option');
+                    $email = get_field('email', 'option'); 
+                ?>
+                <a href="tel:<?= preg_replace('/[()\-\s]/', '', $phone); ?>">
+                    <?= $phone; ?>
+                </a>
+                <a href="mailto:<?= $email; ?>">
+                    <?= $email; ?>
+                </a>
             </div>
             <div class="footer__copyright">
                 <img 
@@ -63,8 +71,6 @@
         </div>
     </form>
 </div>
-
-</div><!-- /.wrapper -->
 
 <?php wp_footer(); ?>
 

@@ -11,7 +11,6 @@ export default function(){
 
     function smoothScrollTo(target){
         const targetEl = document.querySelector(target);
-        console.log(target);
         if (targetEl) {
             const offsetTop = document.querySelector(target).offsetTop;
 

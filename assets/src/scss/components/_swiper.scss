@@ -1,5 +1,14 @@
-.swiper-horizontal {
+.swiper {
   position: relative;
+  overflow: unset;
+}
+
+.swiper-wrapper {
+  align-items: stretch
+}
+
+.swiper-slide {
+  height: auto
 }
 
 .swiper-navigation {
@@ -14,12 +23,24 @@
   }
 }
 
-.swiper-btn {
+.swiper-button {
   width: 48px;
   height: 48px;
   border: 1px solid #E2E7EB;
   border-radius: 40px;
   cursor: pointer;
+  transition: .25s;
+
+  &:hover {
+    color: #fff;
+    background: $color-main;
+    border-color: $color-main;
+  }
+
+  &-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 
   &--prev {
 

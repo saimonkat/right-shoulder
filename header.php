@@ -39,27 +39,26 @@
                 </div>
             </a>
 
-            <?php /*
+            <?php
                 $args = array(
                     'theme_location' => 'header-menu',
                     'container' => 'nav',
                     'menu_class' => 'header__nav nav',
                 );
                 wp_nav_menu($args);
-            */ ?>
-
-            <nav class="header__nav nav">
-                <ul>
-                    <li><a href="#blog">Блог</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
+            ?>
 
             <div class="header__contacts">
-                <a href="tel:+78009999999">8 800-999-99-99</a>
-                <a href="mailto:example@domain.com">example@domain.com</a>
+                <?php 
+                    $phone = get_field('phone', 'option');
+                    $email = get_field('email', 'option'); 
+                ?>
+                <a href="tel:<?= preg_replace('/[()\-\s]/', '', $phone); ?>">
+                    <?= $phone; ?>
+                </a>
+                <a href="mailto:<?= $email; ?>">
+                    <?= $email; ?>
+                </a>
             </div>
 
             <button class="header__btn btn" 
@@ -69,6 +68,5 @@
             </button>
         </div>
     </header>
-
-    <div class="wrapper">
-        <main class="main">
+    
+    <main class="main">

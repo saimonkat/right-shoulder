@@ -12,37 +12,8 @@
 
 .type {
   $self: &;
-  position: relative;
   height: 375px;
-  background: $color-ghost;
   overflow: hidden;
-
-  &--blue {
-    background: $color-main;
-    color: $color-ghost;
-  }
-
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 90px;
-    background: linear-gradient(180deg, #F5F5F500, #F5F5F5);
-
-    @include media-up(md) {
-      height: 110px;
-    }
-  }
-
-  &--blue:after {
-    background: linear-gradient(180deg, #1C5D6B00, #1C5D6B);
-  }
 
   @include media-up(md) {
     flex: 1 1 0;
@@ -57,9 +28,68 @@
     height: 580px;
   }
 
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+
+    #{$self}.active & {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: $color-ghost;
+
+    &:first-child {
+      #{$self}.active & {
+        pointer-events: none;
+      }
+    }
+
+    &:last-child {
+      transform: rotateY(180deg);
+
+      #{$self}.active & {
+        z-index: 1;
+      }
+    }
+
+    #{$self}:last-child & {
+      background: $color-main;
+      color: $color-ghost;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 90px;
+      background: linear-gradient(180deg, #F5F5F500, #F5F5F5);
+      pointer-events: none;
+
+      @include media-up(md) {
+        height: 110px;
+      }
+
+      #{$self}:last-child & {
+        background: linear-gradient(180deg, #1C5D6B00, #1C5D6B);
+      }
+    }
+  }
+
   &__content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -67,6 +97,10 @@
     padding: 20px;
 
     @include media-up(md) {
+      padding: 30px;
+    }
+
+    @include media-up(xl) {
       padding: 40px;
     }
   }
@@ -75,13 +109,25 @@
     opacity: 0.8;
   }
 
+  &__full-text {
+    flex: 1 1 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    ul {
+      li:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
   &__img {
     position: absolute;
     left: 15%;
     bottom: 0;
     width: 70%;
 
-    #{$self}--blue & {
+    #{$self}:last-child & {
       left: auto;
       right: 0;
     }

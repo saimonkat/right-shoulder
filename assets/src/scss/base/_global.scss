@@ -59,10 +59,24 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 20px;
+  font-size: 16px;
 
   @include media-up(md) {
+    font-size: 20px;
+  }
+
+  @include media-up(xl) {
     font-size: 24px;
+  }
+}
+
+p {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

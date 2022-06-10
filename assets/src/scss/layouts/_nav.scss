@@ -3,11 +3,9 @@
     display: none;
   }
 
-  ul {
-    @include media-up(lg) {
-      display: flex;
-      gap: 20px;
-    }
+  @include media-up(lg) {
+    display: flex;
+    gap: 20px;
   }
 
   li {
