@@ -4,7 +4,7 @@
             <h2 class="features__title">Что мы можем вам<br> предложить</h2>
             <div class="features__text">У нас доступно много специализаций<br> юридической помощи</div>
         </div>
-        <div class="features__slider">
+        <div class="features__slider swiper">
             <div class="swiper-wrapper">
                 <div class="features__item feature swiper-slide">
                     <svg width="64" height="64" class="feature__icon">
@@ -49,18 +49,7 @@
                     <div class="feature__title">Споры с банками</div>
                 </div>
             </div>
-            <div class="swiper-navigation">
-                <div class="swiper-button swiper-button--prev">
-                    <svg width="48" height="48">
-                        <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#arrow"></use>
-                    </svg>
-                </div>
-                <div class="swiper-button swiper-button--next">
-                    <svg width="48" height="48">
-                        <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#arrow"></use>
-                    </svg>
-                </div>
-            </div>
+            <?php get_template_part('template-parts/components/swiper-navigation'); ?>
         </div>
     </div>
 </section>

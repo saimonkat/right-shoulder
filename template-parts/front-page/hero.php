@@ -30,7 +30,8 @@
                 alt="">
         </picture>
         <picture class="wow fadeInRight">
-            <source srcset="<?= DIST_URI ?>/img/base/case-left.webp" type="image/webp">
+            <source srcset="<?= DIST_URI ?>/img/base/case-left.webp" 
+                type="image/webp">
             <img src="<?= DIST_URI ?>/img/base/case-left.png"
                 data-src="<?= DIST_URI ?>/img/base/case-left.png"
                 alt="">
