@@ -29,4 +29,23 @@
       width: 100%;
     }
   }
+
+  .carousel__button.is-close {
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    color: $color-black;
+
+    @include media-up(md) {
+      top: 32px;
+      right: 32px;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      filter: none;
+    }
+  }
 }
