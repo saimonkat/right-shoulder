@@ -9,21 +9,12 @@
 
   &__slide {
     @include media-down(sm) {
-      display: block;
-      padding: 0;
+      padding: 20px;
     }
   }
 
   &__content {
     padding: 0;
-
-    @include media-down(sm) {
-      min-height: 100vh;
-    }
-
-    .fancybox-change & {
-      animation-duration: 0s;
-    }
 
     :focus {
       outline: inherit !important;
