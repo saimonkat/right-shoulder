@@ -1,6 +1,14 @@
 .swiper {
   position: relative;
   overflow: unset;
+
+  .swiper-wrapper {
+    align-items: stretch
+  }
+
+  .swiper-slide {
+    height: auto
+  }
 }
 
 .swiper-navigation {
