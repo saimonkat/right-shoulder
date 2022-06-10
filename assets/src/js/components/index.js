@@ -1,20 +1,12 @@
-import pageScroll from './page-scroll';
-import anchorScroll from './anchor-scroll';
-import forms from './forms';
-import textarea from './textarea';
-import wow from './wow';
 import sliders from './sliders';
-import fancybox from './fancybox';
+import typeCards from './type-cards';
+import faq from './faq';
 
 export default {
     init() {
-        pageScroll();
-        // anchorScroll();
-        forms();
-        textarea();
-        wow();
         sliders();
-        fancybox();
+        typeCards();
+        faq();
     },
     finalize() {}
 }
