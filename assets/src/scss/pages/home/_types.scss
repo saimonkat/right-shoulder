@@ -115,6 +115,9 @@
     margin-bottom: 20px;
 
     ul {
+      list-style-type: disc;
+      padding-left: 15px;
+
       li:not(:last-child) {
         margin-bottom: 12px;
       }

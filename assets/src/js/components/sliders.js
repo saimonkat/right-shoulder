@@ -28,11 +28,9 @@ export default function () {
         spaceBetween: 20,
         breakpoints: {
             768: {
+                spaceBetween: 52,
                 slidesPerView: 'auto',
             },
-            992: {
-                spaceBetween: 52
-            }
         },
     });
 
