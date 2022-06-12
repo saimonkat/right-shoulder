@@ -21,12 +21,6 @@
       margin-bottom: 20px;
     }
 
-    .form__fields {
-      @include media-up(md) {
-        flex-direction: column;
-      }
-    }
-
     .btn {
       width: 100%;
     }

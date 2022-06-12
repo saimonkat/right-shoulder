@@ -5,11 +5,16 @@
             <h2 class="form__title h2">Давайте начнём</h2>
             <div class="form__fields">
                 <input type="tel"
+                    name="phone"
                     placeholder="+7 (999) 999-99-99"
                     required=""/>
                 <input type="text"
+                    name="name"
                     placeholder="Имя"
                     required=""/>
+                <textarea 
+                    name="request" 
+                    placeholder="Опишите проблему"/></textarea>
                 <button type="submit" class="btn">Перезвонить мне</button>
             </div>
             <div class="form__policy">

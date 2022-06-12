@@ -6,25 +6,20 @@
 
   @include media-up(md) {
     padding: 60px 0 20px;
-    background-image: url(../img/base/case-right.png);
+    background-image: url(../img/base/case-footer.png);
     background-repeat: no-repeat;
-    background-size: auto 50%;
-    background-position: right bottom;
+    background-size: 230px;
+    background-position: right 300px;
+  }
 
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      display: block;
-      width: 100%;
-      height: 150px;
-      background: linear-gradient(180deg, #1C5D6B00 0%, #1C5D6B 100%);
-    }
+  @include media-up(lg) {
+    background-size: 350px;
+    background-position: right 120px;
   }
 
   @include media-up(xl) {
-    background-size: auto 80%;
+    background-size: 500px;
+    background-position: right 45px;
   }
 
   &__title {
@@ -34,21 +29,28 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     position: relative;
     z-index: 1;
+
+    @include media-up(md) {
+      gap: 80px;
+    }
   }
 
   &__form {
-    margin-bottom: 40px;
-
-    @include media-up(md) {
-      margin-bottom: 80px;
-    }
-
-    input {
+    input,
+    textarea {
       background: $color-main;
       border-color: #fff;
       color: #fff;
+
+      &:-webkit-autofill{
+        box-shadow: 0 0 0 50px $color-main inset;
+        -webkit-text-fill-color: #fff;
+      }
     }
 
     .btn {

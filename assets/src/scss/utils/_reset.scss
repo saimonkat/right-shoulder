@@ -58,18 +58,6 @@ textarea {
   width: 100%;
   color: inherit;
   border: none;
-
-  &:hover,
-  &:focus {
-    outline: none;
-  }
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
   font: inherit;
   color: inherit;
 
@@ -77,5 +65,13 @@ select {
     color: inherit;
     opacity: 0.6;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
+button {
+  margin: 0;
+}

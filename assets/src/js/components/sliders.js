@@ -2,34 +2,50 @@ import Swiper, { Navigation } from 'swiper';
 Swiper.use([Navigation]);
 
 export default function () {
-    const swipers = document.querySelectorAll('.swiper');
-    swipers && swipers.forEach(swiper => {
-        new Swiper(swiper, {
-            slidesPerView: 'auto',
-            navigation: {
-                nextEl: '.swiper-button--next',
-                prevEl: '.swiper-button--prev',
-            },
-            spaceBetween: 10,
-            breakpoints: {
-                768: {
-                    spaceBetween: 20
-                }
-            },
-        });
-    })
+    const featuresSlider = document.querySelector('.features__slider');
+    featuresSlider && new Swiper(featuresSlider, {
+        slidesPerView: 2,
+        navigation: {
+            nextEl: '.swiper-button--next',
+            prevEl: '.swiper-button--prev',
+        },
+        spaceBetween: 10,
+        breakpoints: {
+            768: {
+                spaceBetween: 20,
+                slidesPerView: 'auto',
+            }
+        },
+    });
 
     const reviewsSlider = document.querySelector('.reviews__slider');
     reviewsSlider && new Swiper(reviewsSlider, {
-        slidesPerView: 'auto',
+        slidesPerView: 1,
         navigation: {
             nextEl: '.swiper-button--next',
             prevEl: '.swiper-button--prev',
         },
         spaceBetween: 20,
         breakpoints: {
-            992: {
-                spaceBetween: 52
+            768: {
+                spaceBetween: 52,
+                slidesPerView: 'auto',
+            },
+        },
+    });
+
+    const blogSlider = document.querySelector('.blog__slider');
+    blogSlider && new Swiper(blogSlider, {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.swiper-button--next',
+            prevEl: '.swiper-button--prev',
+        },
+        spaceBetween: 10,
+        breakpoints: {
+            768: {
+                spaceBetween: 20,
+                slidesPerView: 'auto',
             }
         },
     });

@@ -3,7 +3,8 @@ export default function() {
 
     const elementInView = (el) => {
         let elTop = el.getBoundingClientRect().top;
-        return elTop <= window.innerHeight - 100;
+        let elBot = el.getBoundingClientRect().bottom;
+        return elTop <= window.innerHeight - 100 || window.innerHeight >= elBot;
     }
 
     const displayElement = (el) => {
