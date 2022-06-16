@@ -1,4 +1,4 @@
-<section class="form-section section">
+<section class="form-section section section--big">
     <div class="container">
         <form action="#" class="form wow fadeInUp">
             <div class="form__text">Мы перезвоним в течении 15 минут</div>
