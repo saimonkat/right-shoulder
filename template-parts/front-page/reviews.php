@@ -1,4 +1,4 @@
-<section class="reviews section" id="reviews">
+<section class="reviews section section--big" id="reviews">
     <div class="container">
         <h2 class="reviews__title wow fadeInUp">
             Закрываем дела.

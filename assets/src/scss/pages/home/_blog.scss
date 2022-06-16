@@ -1,8 +1,4 @@
 .blog {
-  @include media-up(md) {
-    padding: 80px 0;
-  }
-
   &__title {
     @include media-up(md) {
       margin-bottom: 40px;

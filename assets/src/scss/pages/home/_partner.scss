@@ -1,0 +1,72 @@
+.partner {
+  background: $color-ghost;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include media-up(md) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  }
+
+  &__photo {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include media-up(md) {
+      max-width: 305px;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__content {
+    max-width: 382px;
+    text-align: center;
+
+    @include media-up(md) {
+      text-align: left;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  &__post {
+    opacity: 0.4;
+  }
+
+  &__text {
+    @include title;
+    font-size: 20px;
+    margin-top: 20px;
+
+    @include media-up(md) {
+      margin-top: 40px;
+    }
+  }
+
+  &__sign {
+    display: block;
+    width: 103px;
+    margin: 40px auto 0;
+
+    @include media-up(md) {
+      margin-left: 0;
+    }
+  }
+}

@@ -2,7 +2,6 @@
   background-color: $color-ghost;
 
   @include media-up(md) {
-    padding: 80px 0;
     background-image: url(../img/base/case-right.png);
     background-repeat: no-repeat;
     background-size: auto 50%;

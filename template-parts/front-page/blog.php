@@ -1,4 +1,4 @@
-<section class="blog section" id="blog">
+<section class="blog section section--big" id="blog">
     <div class="container">
         <h2 class="blog__title">
             Полезные стаьи

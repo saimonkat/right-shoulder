@@ -25,7 +25,7 @@ export default function () {
             nextEl: '.swiper-button--next',
             prevEl: '.swiper-button--prev',
         },
-        spaceBetween: 20,
+        spaceBetween: 10,
         breakpoints: {
             768: {
                 spaceBetween: 52,
