@@ -20,7 +20,7 @@
                                 <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#play"></use>
                             </svg>
                         </div>
-                        <video src="<?= DIST_URI ?>/img/base/review.mp4"></video>
+                        <video src="<?= DIST_URI ?>/img/base/review.mp4" playsinline></video>
                     </div>
                     <div class="review__content">
                         <div class="review__name">
@@ -48,7 +48,7 @@
                                 <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#play"></use>
                             </svg>
                         </div>
-                        <video src="<?= DIST_URI ?>/img/base/review.mp4"></video>
+                        <video src="<?= DIST_URI ?>/img/base/review.mp4" playsinline></video>
                     </div>
                     <div class="review__content">
                         <div class="review__name">
@@ -76,7 +76,7 @@
                                 <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#play"></use>
                             </svg>
                         </div>
-                        <video src="<?= DIST_URI ?>/img/base/review.mp4"></video>
+                        <video src="<?= DIST_URI ?>/img/base/review.mp4" playsinline></video>
                     </div>
                     <div class="review__content">
                         <div class="review__name">
