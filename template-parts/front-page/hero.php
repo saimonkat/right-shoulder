@@ -2,10 +2,10 @@
     <div class="hero__container container">
         <div class="hero__content">
             <h1 class="hero__title wow fadeInUp" data-wow-delay="200">
-                Бесплатнаadwdawя<br> юридическая<br> консультация
+                <?= get_field('first_section_title', 'option'); ?>
             </h1>
             <div class="hero__text wow fadeInUp" data-wow-delay="300">
-                мы ответим на ваш вопрос и предложим выход из спорной ситуации
+                <?= get_field('first_section_desc', 'option'); ?>
             </div>
             <div class="hero__buttons wow fadeInUp" data-wow-delay="400">
                 <button class="btn btn--big"
