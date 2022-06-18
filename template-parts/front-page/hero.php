@@ -2,7 +2,7 @@
     <div class="hero__container container">
         <div class="hero__content">
             <h1 class="hero__title wow fadeInUp" data-wow-delay="200">
-                Бесплатная<br> юридическая<br> консультация
+                Бесплатнаadwdawя<br> юридическая<br> консультация
             </h1>
             <div class="hero__text wow fadeInUp" data-wow-delay="300">
                 мы ответим на ваш вопрос и предложим выход из спорной ситуации
