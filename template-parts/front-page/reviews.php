@@ -16,7 +16,7 @@
                                         <source srcset="<?= DIST_URI ?>/img/base/review.webp"
                                             type="image/webp">
                                         <img src="<?= DIST_URI ?>/img/base/review.jpg"
-                                            data-src="<?= DIST_URI ?>/img/base/review.jpg"
+                                            data-src="<?= get_sub_field('preview', 'option'); ?>"
                                             alt="">
                                     </picture>
                                     <svg width="20" height="27">
