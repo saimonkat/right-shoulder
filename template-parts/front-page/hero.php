@@ -1,22 +1,34 @@
+<?php $hero = get_field('hero'); ?>
+
 <section class="hero section" id="hero">
     <div class="hero__container container">
         <div class="hero__content">
-            <h1 class="hero__title wow fadeInUp" data-wow-delay="200">
-                <?= get_field('first_section_title', 'option'); ?>
-            </h1>
-            <div class="hero__text wow fadeInUp" data-wow-delay="300">
-                <?= get_field('first_section_desc', 'option'); ?>
-            </div>
+            <?php if ($hero['title']): ?>
+                <h1 class="hero__title wow fadeInUp" data-wow-delay="200">
+                    <?= $hero['title']; ?>
+                </h1>
+            <?php endif; ?>
+
+            <?php if ($hero['text']): ?>
+                <div class="hero__text wow fadeInUp" data-wow-delay="300">
+                    <?= $hero['text']; ?>
+                </div>
+            <?php endif; ?>
+
             <div class="hero__buttons wow fadeInUp" data-wow-delay="400">
-                <button class="btn btn--big"
-                        data-fancybox
-                        data-src="#modal-call">
-                    Перезвонить мне
-                </button>
-                <a href="https://wa.me/88009999999"
-                   class="btn btn--big btn--white">
-                   WhatsApp
-                </a>
+                <?php if ($hero['button_1']): ?>
+                    <button class="btn btn--big"
+                            data-fancybox
+                            data-src="<?= $hero['button_1']['url']; ?>">
+                        <?= $hero['button_1']['title']; ?>
+                    </button>
+                <?php endif; ?>
+                <?php if ($hero['button_2']): ?>
+                    <a href="<?= $hero['button_2']['url']; ?>"
+                       class="btn btn--big btn--white">
+                        <?= $hero['button_2']['title']; ?>
+                    </a>
+                <?php endif; ?>
             </div>
         </div>
     </div>
