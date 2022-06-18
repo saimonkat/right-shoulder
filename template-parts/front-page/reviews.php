@@ -27,13 +27,13 @@
                             </div>
                             <div class="review__content">
                                 <div class="review__name">
-                                    Александр Перлов
+                                    <?= get_sub_field('name', 'option'); ?>
                                 </div>
                                 <div class="review__type">
-                                    Возврат вклада
+                                    <?= get_sub_field('type', 'option'); ?>
                                 </div>
                                 <div class="review__text">
-                                    Большое спасибо за ваш профессионализм. Эта стрессовая ситуация прошла в итоге максимально гладко и без нервов. Очень хорошие юристы.
+                                    <?= get_sub_field('text', 'option'); ?>
                                 </div>
                             </div>
                         </div>
