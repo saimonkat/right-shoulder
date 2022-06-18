@@ -11,14 +11,14 @@ if ( ! function_exists('theme_setup')) :
     {
         add_theme_support('title-tag');
         add_theme_support('post-thumbnails');
-        
+
         register_nav_menus(
             array(
                 'header-menu' => esc_html__('Header', 'theme'),
                 'footer-menu' => esc_html__('Footer', 'theme'),
             )
         );
-        
+
         add_theme_support(
             'html5',
             array(
@@ -27,7 +27,7 @@ if ( ! function_exists('theme_setup')) :
                 'script',
             )
         );
-        
+
     }
 endif;
 add_action('after_setup_theme', 'theme_setup');
@@ -50,3 +50,10 @@ add_filter( 'autoptimize_filter_imgopt_lazyload_cssoutput', 'nonoscript_lazyload
 require get_template_directory() . '/app/vendor/autoload.php';
 require get_template_directory() . '/app/init.php';
 
+add_filter( 'upload_mimes', 'svg_upload_allow' );
+
+function svg_upload_allow( $mimes ) {
+	$mimes['svg']  = 'image/svg+xml';
+
+	return $mimes;
+}
