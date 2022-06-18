@@ -49,11 +49,3 @@ add_filter( 'autoptimize_filter_imgopt_lazyload_cssoutput', 'nonoscript_lazyload
 
 require get_template_directory() . '/app/vendor/autoload.php';
 require get_template_directory() . '/app/init.php';
-
-add_filter( 'upload_mimes', 'svg_upload_allow' );
-
-function svg_upload_allow( $mimes ) {
-	$mimes['svg']  = 'image/svg+xml';
-
-	return $mimes;
-}
