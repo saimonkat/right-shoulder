@@ -5,11 +5,12 @@
 
   @include media-up(lg) {
     display: flex;
-    gap: 20px;
   }
 
   li {
-
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 
   a {

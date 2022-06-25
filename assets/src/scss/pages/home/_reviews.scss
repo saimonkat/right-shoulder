@@ -16,12 +16,10 @@
 .review {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   width: fit-content;
 
   @include media-up(md) {
     flex-direction: row;
-    gap: 40px;
   }
 
   &__video {
@@ -29,12 +27,15 @@
     position: relative;
     width: 220px;
     height: 220px;
+    margin-bottom: 20px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
 
     @include media-up(md) {
       flex-shrink: 0;
+      margin-bottom: 0;
+      margin-right: 40px;
     }
 
     @include media-up(lg) {

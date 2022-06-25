@@ -29,18 +29,17 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
     position: relative;
     z-index: 1;
-
-    @include media-up(md) {
-      gap: 80px;
-    }
   }
 
   &__form {
+    margin-bottom: 40px;
+
+    @include media-up(md) {
+      margin-bottom: 80px;
+    }
+
     input,
     textarea {
       background: $color-main;
@@ -74,6 +73,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
+
+    @include media-up(md) {
+      margin-top: 80px;
+    }
   }
 
   &__logo {
