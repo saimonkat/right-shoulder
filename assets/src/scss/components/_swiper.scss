@@ -16,7 +16,6 @@
   right: 0;
   top: -88px;
   display: flex;
-  gap: 20px;
 
   @include media-down(sm) {
     display: none;
@@ -38,6 +37,10 @@
     color: #fff;
     background: $color-main;
     border-color: $color-main;
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
   }
 
   &-disabled {

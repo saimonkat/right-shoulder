@@ -2,7 +2,6 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 32px;
 
     @include media-up(md) {
       flex-direction: row;
@@ -17,6 +16,15 @@
 
 .achieve {
   text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+
+    @include media-up(md) {
+      margin-bottom: 0;
+      margin-right: 32px;
+    }
+  }
 
   &__title {
 

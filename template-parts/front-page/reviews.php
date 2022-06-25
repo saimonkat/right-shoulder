@@ -1,3 +1,5 @@
+<?php $reviews = get_field('reviews'); ?>
+
 <section class="reviews section section--big" id="reviews">
     <div class="container">
         <h2 class="reviews__title wow fadeInUp">
@@ -6,43 +8,41 @@
         </h2>
         <div class="reviews__slider swiper">
             <div class="swiper-wrapper">
-                <?php if( have_rows('reviews', 'option') ): ?>
-                    <?php while( have_rows('review', 'option') ): the_row(); ?>
-
-                        <div class="reviews__item review swiper-slide">
-                            <div class="review__video">
-                                <div class="review__video-bg">
-                                    <picture class="review__video-poster">
-                                        <source srcset="<?= DIST_URI ?>/img/base/review.webp"
-                                            type="image/webp">
-                                        <img src="<?= DIST_URI ?>/img/base/review.jpg"
-                                            data-src="<?= get_sub_field('preview', 'option'); ?>"
+                <?php foreach($reviews['list'] as $review): ?>
+                    
+                    <div class="reviews__item review swiper-slide">
+                        <div class="review__video">
+                            <div class="review__video-bg">
+                                <picture class="review__video-poster">
+                                    <!-- <source srcset="<?= $review['preview'] ?>"
+                                        type="image/webp"> -->
+                                        <?php if ($achieve['preview']): ?>
+                                            <img src="<?= $review['preview'] ?>"
+                                            data-src="<?= $review['preview'] ?>"
                                             alt="">
+                                        <?php endif; ?>
                                     </picture>
                                     <svg width="20" height="27">
                                         <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#play"></use>
                                     </svg>
                                 </div>
-                                <video src="<?= get_sub_field('title', 'option'); ?>"></video>
+                                <video src="<?= $review['video']['url'] ?>"></video>
                             </div>
                             <div class="review__content">
                                 <div class="review__name">
-                                    <?= get_sub_field('name', 'option'); ?>
+                                    <?= $review['name'] ?>
                                 </div>
                                 <div class="review__type">
-                                    <?= get_sub_field('type', 'option'); ?>
+                                    <?= $review['type'] ?>
                                 </div>
                                 <div class="review__text">
-                                    <?= get_sub_field('text', 'option'); ?>
+                                    <?= $review['text'] ?>
                                 </div>
                             </div>
                         </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-
-
+                    <?php endforeach; ?>
+                </div>
+                <?php get_template_part('template-parts/components/swiper-navigation'); ?>
             </div>
-            <?php get_template_part('template-parts/components/swiper-navigation'); ?>
         </div>
-    </div>
-</section>
+    </section>
