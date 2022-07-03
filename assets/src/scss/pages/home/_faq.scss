@@ -1,16 +1,32 @@
 .faq {
+<<<<<<< HEAD
     &__wrapper {
         display: grid;
         gap: 40px;
+=======
+  &__wrapper {
+    display: grid;
+>>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
 
         @include media-up(md) {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
+<<<<<<< HEAD
     &__title {
         margin-bottom: 0;
     }
+=======
+  &__title {
+    margin-bottom: 40px;
+
+    @include media-up(md) {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+  }
+>>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
 
     &__content {
 
@@ -18,12 +34,48 @@
 }
 
 .faq-item {
+<<<<<<< HEAD
     $self: &;
     border-top: 1px solid #E2E7EB;
     transition: padding .3s;
 
     &.active {
         padding-bottom: 20px;
+=======
+  $self: &;
+  border-top: 1px solid #E2E7EB;
+  transition: padding .3s;
+
+  &.active {
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: padding .3s;
+
+    #{$self}.active & {
+      padding: 16px 0;
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: $color-ghost;
+    transition: transform .3s;
+
+    #{$self}.active & {
+      transform: rotate(135deg);
+>>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
     }
 
     &__title {

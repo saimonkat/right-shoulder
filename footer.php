@@ -15,7 +15,7 @@
                     required=""/>
                 <textarea 
                     name="request" 
-                    placeholder="Опишите проблему"/></textarea>
+                    placeholder="Кратко опишите вопрос"/></textarea>
                 <button type="submit" class="btn btn--white">Перезвонить мне</button>
             </div>
             <div class="form__policy">
@@ -72,7 +72,7 @@
                 required=""/>
             <textarea 
                 name="request" 
-                placeholder="Опишите проблему"/></textarea>
+                placeholder="Кратко опишите вопрос"/></textarea>
             <button type="submit" class="btn">Перезвонить мне</button>
         </div>
         <div class="form__policy">

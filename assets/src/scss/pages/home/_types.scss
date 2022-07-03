@@ -2,7 +2,6 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
     @include media-up(md) {
       flex-direction: row;
@@ -14,6 +13,15 @@
   $self: &;
   height: 375px;
   overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include media-up(md) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
 
   @include media-up(md) {
     flex: 1 1 0;
