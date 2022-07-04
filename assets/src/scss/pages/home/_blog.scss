@@ -22,7 +22,9 @@
 
   &__img {
     position: relative;
+    display: block;
     padding-top: 78%;
+    overflow: hidden;
 
     img {
       position: absolute;
@@ -31,6 +33,11 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: .5s;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
     }
   }
 
@@ -44,6 +51,7 @@
 
   &__title {
     margin-bottom: 12px;
+    @include link;
   }
 
   &__text {
