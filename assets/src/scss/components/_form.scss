@@ -35,6 +35,28 @@
     textarea {
       margin-bottom: 20px;
     }
+
+    .wpcf7-form-control-wrap {
+      width: 100%;
+      margin-bottom: 20px;
+
+      input,
+      textarea {
+        width: 100%;
+        margin: 0;
+      }
+
+      @include media-up(md) {
+        &:first-child {
+          margin-right: 20px;
+        }
+
+        &[data-name='user-phone'],
+        &[data-name='user-name'] {
+          width: calc(50% - 10px);
+        }
+      }
+    }
   }
 
   &__policy {

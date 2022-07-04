@@ -8,13 +8,8 @@
             </h2>
             <div class="faq__content wow fadeInUp" data-wow-delay="200">
                 <?php foreach($faqs['list'] as $faq): ?>
-<<<<<<< HEAD
-                <?php i++ ?>
-                <div class="faq__item faq-item toggler <?php if( i == 0 ): ?> <?= 'active' ?>">
-=======
                 <?php $i++; ?>
                 <div class="faq__item faq-item toggler <?php if( $i == 0 ) echo 'active'; ?>">
->>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
                     <?php if($faq['question']): ?>
                     <div class="faq-item__title toggler-title h3">
                         <?= $faq['question'] ?>
@@ -27,10 +22,6 @@
                     </div>
                     <? endif; ?>
                 </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
                 <?php endforeach; ?>
             </div>
         </div>

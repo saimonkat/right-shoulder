@@ -1,8 +1,3 @@
 import "@icons/logo.svg"
 import "@icons/arrow.svg"
 import "@icons/play.svg"
-import "@icons/feature-1.svg"
-import "@icons/feature-2.svg"
-import "@icons/feature-3.svg"
-import "@icons/feature-4.svg"
-import "@icons/feature-5.svg"
