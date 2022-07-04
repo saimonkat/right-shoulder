@@ -14,18 +14,20 @@
                 </div>
             <?php endif; ?>
         </div>
+        <?php if($features['list']): ?>
         <div class="features__slider swiper">
             <div class="swiper-wrapper">
                 <?php foreach($features['list'] as $feature): ?>
-                    <div class="features__item feature swiper-slide">
-                        <?= $feature['svg']; ?>
-                        <div class="feature__title">
-                            <?= $feature['title']; ?>
-                        </div>
+                <div class="features__item feature swiper-slide">
+                    <?= $feature['svg']; ?>
+                    <div class="feature__title">
+                        <?= $feature['title']; ?>
                     </div>
+                </div>
                 <?php endforeach; ?>
             </div>
             <?php get_template_part('template-parts/components/swiper-navigation'); ?>
         </div>
+        <?php endif; ?>
     </div>
 </section>
