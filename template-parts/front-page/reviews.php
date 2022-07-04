@@ -9,18 +9,6 @@
         <div class="reviews__slider swiper">
             <div class="swiper-wrapper">
                 <?php foreach($reviews['list'] as $review): ?>
-<<<<<<< HEAD
-
-                        <div class="reviews__item review swiper-slide">
-                            <div class="review__video">
-                                <div class="review__video-bg">
-                                    <picture class="review__video-poster">
-                                        <source srcset="<?= DIST_URI ?>/img/base/review.webp"
-                                            type="image/webp">
-                                            <?php if ($achieve['preview']): ?>
-                                        <img src="<?= DIST_URI ?>/img/base/review.jpg"
-                                            data-src="<<?= ($achieve['preview']): ?>"
-=======
                     
                     <div class="reviews__item review swiper-slide">
                         <div class="review__video">
@@ -31,7 +19,6 @@
                                         <?php if ($achieve['preview']): ?>
                                             <img src="<?= $review['preview'] ?>"
                                             data-src="<?= $review['preview'] ?>"
->>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
                                             alt="">
                                         <?php endif; ?>
                                     </picture>
