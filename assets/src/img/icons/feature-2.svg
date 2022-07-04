@@ -1,6 +1,7 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="10" y="17" width="44" height="32" stroke="currentColor" stroke-width="1.5"/>
-<circle cx="32" cy="26" r="2" fill="currentColor"/>
-<path d="M25 17V11H39V17" stroke="currentColor" stroke-width="1.5"/>
-<path d="M10 30.5H54" stroke="currentColor" stroke-width="1.5"/>
+<path d="M30 55C30 53.4241 29.6896 51.8637 29.0866 50.4078C28.4835 48.9519 27.5996 47.629 26.4853 46.5147C25.371 45.4004 24.0481 44.5165 22.5922 43.9134C21.1363 43.3104 19.5759 43 18 43C16.4241 43 14.8637 43.3104 13.4078 43.9134C11.9519 44.5165 10.629 45.4004 9.51472 46.5147C8.40042 47.629 7.5165 48.9519 6.91345 50.4078C6.31039 51.8637 6 53.4241 6 55" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/>
+<circle r="8" transform="matrix(-1 0 0 1 46 31)" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/>
+<circle cx="18" cy="31" r="8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M58 55C58 53.4241 57.6896 51.8637 57.0866 50.4078C56.4835 48.9519 55.5996 47.629 54.4853 46.5147C53.371 45.4004 52.0481 44.5165 50.5922 43.9134C49.1363 43.3104 47.5759 43 46 43C44.4241 43 42.8637 43.3104 41.4078 43.9134C39.9519 44.5165 38.629 45.4004 37.5147 46.5147C36.4004 47.629 35.5165 48.9519 34.9134 50.4078C34.3104 51.8637 34 53.4241 34 55" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M31.5 8L35 17.5H29L33.5 27.5" stroke="currentColor" stroke-width="1.5"/>
 </svg>
