@@ -1,47 +1,21 @@
 .faq {
-<<<<<<< HEAD
-    &__wrapper {
-        display: grid;
-        gap: 40px;
-=======
   &__wrapper {
     display: grid;
->>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
-
-        @include media-up(md) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-<<<<<<< HEAD
-    &__title {
-        margin-bottom: 0;
-    }
-=======
-  &__title {
-    margin-bottom: 40px;
+    gap: 40px;
 
     @include media-up(md) {
-      margin-bottom: 0;
-      margin-right: 40px;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
->>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
 
-    &__content {
+  &__title {
+    margin-bottom: 0;
+  }
 
-    }
+  &__content {}
 }
 
 .faq-item {
-<<<<<<< HEAD
-    $self: &;
-    border-top: 1px solid #E2E7EB;
-    transition: padding .3s;
-
-    &.active {
-        padding-bottom: 20px;
-=======
   $self: &;
   border-top: 1px solid #E2E7EB;
   transition: padding .3s;
@@ -54,6 +28,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     padding: 20px 0;
     margin-bottom: 0;
     cursor: pointer;
@@ -68,64 +43,35 @@
     position: relative;
     width: 32px;
     height: 32px;
-    margin-left: 20px;
     border-radius: 50%;
     background: $color-ghost;
     transition: transform .3s;
 
     #{$self}.active & {
       transform: rotate(135deg);
->>>>>>> 1874dc7f841431c5973a126bfff95476abdf9634
     }
 
-    &__title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        padding: 20px 0;
-        margin-bottom: 0;
-        cursor: pointer;
-        transition: padding .3s;
-
-        #{$self}.active & {
-            padding: 16px 0;
-        }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 17px;
+      height: 1px;
+      background: #000;
     }
 
-    &__button {
-        position: relative;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        background: $color-ghost;
-        transition: transform .3s;
-
-        #{$self}.active & {
-            transform: rotate(135deg);
-        }
-
-        &:before,
-        &:after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 17px;
-            height: 1px;
-            background: #000;
-        }
-
-        &:after {
-            transform: translate(-50%, -50%) rotate(90deg);
-        }
+    &:after {
+      transform: translate(-50%, -50%) rotate(90deg);
     }
+  }
 
-    &__text {
-        padding-right: 48px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .3s ease-out;
-    }
+  &__text {
+    padding-right: 48px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-out;
+  }
 }
