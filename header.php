@@ -29,7 +29,7 @@
 
     <header class="header">
         <div class="header__content container">
-            <a href="#hero" class="header__logo logo">
+            <a href="/" class="header__logo logo">
                 <svg width="48" height="48" class="logo__img">
                     <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#logo"></use>
                 </svg>

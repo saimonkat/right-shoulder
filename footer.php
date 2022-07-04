@@ -24,7 +24,7 @@
         </form>
         <iframe src="https://yandex.ru/map-widget/v1/-/CCUJV2WJwC" width="100%" height="320" frameborder="0" allowfullscreen="true"></iframe>
         <div class="footer__bottom">
-            <a href="#hero" class="footer__logo logo">
+            <a href="/" class="footer__logo logo">
                 <svg width="48" height="48" class="logo__img">
                     <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#logo"></use>
                 </svg>
