@@ -35,28 +35,6 @@
     textarea {
       margin-bottom: 20px;
     }
-
-    .wpcf7-form-control-wrap {
-      width: 100%;
-      margin-bottom: 20px;
-
-      input,
-      textarea {
-        width: 100%;
-        margin: 0;
-      }
-
-      @include media-up(md) {
-        &:first-child {
-          margin-right: 20px;
-        }
-
-        &[data-name='user-phone'],
-        &[data-name='user-name'] {
-          width: calc(50% - 10px);
-        }
-      }
-    }
   }
 
   &__policy {
@@ -97,4 +75,51 @@ textarea {
   width: 100% !important;
   height: 96px;
   min-height: 96px;
+}
+
+.wpcf7-form-control-wrap {
+  width: 100%;
+  margin-bottom: 20px;
+
+  input,
+  textarea {
+    width: 100%;
+    margin: 0;
+  }
+
+  @include media-up(md) {
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    &[data-name='user-phone'],
+    &[data-name='user-name'] {
+      width: calc(50% - 10px);
+    }
+  }
+}
+
+.wpcf7-not-valid-tip {
+  margin-top: 8px;
+  color: #ff6868;
+}
+
+.wpcf7-response-output {
+  padding: 0;
+  border: 0 !important;
+  margin: 20px 0 0;
+
+  .wpcf7 form.invalid &,
+  .wpcf7 form.unaccepted &,
+  .wpcf7 form.payment-required & {
+    color: #ffb900;
+  }
+
+  .wpcf7 form.sent & {
+    color: #46b450;
+  }
+
+  .modal & {
+    text-align: center;
+  }
 }
