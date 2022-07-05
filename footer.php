@@ -2,6 +2,7 @@
 
 <footer class="footer">
     <div class="footer__content container">
+        <?= do_shortcode('[contact-form-7 id="131" title="Форма в подвале" html_class="footer__form form wow fadeInUp"]'); ?>
         <form action="#" class="footer__form form wow fadeInUp">
             <div class="footer__title h2">Давайте начнём</div>
             <div class="form__fields">
@@ -58,27 +59,7 @@
 </footer>
 
 <div class="modal" id="modal-call">
-    <form action="#" class="modal__form form">
-        <div class="form__title">Давайте начнём</div>
-        <div class="form__text">Мы перезвоним в течении 15 минут</div>
-        <div class="form__fields">
-            <input type="tel"
-                name="phone"
-                placeholder="+7 (999) 999-99-99"
-                required=""/>
-            <input type="text"
-                name="name"
-                placeholder="Имя"
-                required=""/>
-            <textarea 
-                name="request" 
-                placeholder="Кратко опишите вопрос"/></textarea>
-            <button type="submit" class="btn">Перезвонить мне</button>
-        </div>
-        <div class="form__policy">
-            Нажимая кнопку «Отправить», вы соглашаетесь с политикой <a href="#">обработки персональных данных</a>
-        </div>
-    </form>
+    <?= do_shortcode('[contact-form-7 id="130" title="Модальная форма" html_class="modal__form form"]'); ?>
 </div>
 
 <?php wp_footer(); ?>

@@ -1,7 +1,7 @@
 import IMask from 'imask';
 
 export default function() {
-    const phoneInputs = document.querySelectorAll('input[name="phone"]');
+    const phoneInputs = document.querySelectorAll('input[type="tel"]');
 
     phoneInputs && [...phoneInputs].forEach(input => {
         IMask(input, {
