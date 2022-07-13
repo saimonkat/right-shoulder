@@ -15,15 +15,15 @@
                         <div class="review__video">
                             <div class="review__video-bg">
                                 <picture class="review__video-poster">
-                                    <!-- <source srcset="<?= $review['preview'] ?>" type="image/webp"> -->
+                                    <source srcset="<?= $review['preview'] ?>" type="image/webp">
                                     <img src="<?= $review['preview'] ?>"
-                                         data-src="<?= $review['preview'] ?>"
-                                         alt="">
+                                        data-src="<?= $review['preview'] ?>"
+                                        alt="">
                                 </picture>
-                                <svg width="20" height="27">
+<!--                                 <svg width="20" height="27">
                                     <use xlink:href="<?= DIST_URI ?>/img/icons/svg-sprite.svg#play"></use>
-                                </svg>
-                                <video src="<?= $review['video']['url'] ?>"></video>
+                                </svg> -->
+<!--                                 <video src="<?= $review['video']['url'] ?>"></video>  -->
                             </div>
                         </div>
                         <?php endif; ?>
