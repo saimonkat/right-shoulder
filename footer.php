@@ -3,26 +3,6 @@
 <footer class="footer">
     <div class="footer__content container">
         <?= do_shortcode('[contact-form-7 id="131" title="Форма в подвале" html_class="footer__form form wow fadeInUp"]'); ?>
-        <form action="#" class="footer__form form wow fadeInUp">
-            <div class="footer__title h2">Давайте начнём</div>
-            <div class="form__fields">
-            <input type="tel"
-                    name="phone"
-                    placeholder="+7 (999) 999-99-99"
-                    required=""/>
-                <input type="text"
-                    name="name"
-                    placeholder="Имя"
-                    required=""/>
-                <textarea 
-                    name="request" 
-                    placeholder="Кратко опишите вопрос"/></textarea>
-                <button type="submit" class="btn btn--white">Перезвонить мне</button>
-            </div>
-            <div class="form__policy">
-                Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>
-            </div>
-        </form>
         <iframe src="https://yandex.ru/map-widget/v1/-/CCUJV2WJwC" width="100%" height="320" frameborder="0" allowfullscreen="true"></iframe>
         <div class="footer__bottom">
             <a href="/" class="footer__logo logo">

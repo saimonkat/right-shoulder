@@ -3,7 +3,7 @@ export default function() {
     const faqTitleSel = '.faq-item__title';
     const faqTextSel = '.faq-item__text';
 
-    if (faqItems) {
+    if (faqItems.length) {
         faqItems.forEach(faqItem => {
             const faqTitle = faqItem.querySelector(faqTitleSel);
             const faqText = faqItem.querySelector(faqTextSel);

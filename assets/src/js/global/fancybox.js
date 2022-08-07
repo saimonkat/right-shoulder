@@ -10,11 +10,11 @@ export default function () {
             init: () => {
                 const scrollbarW = window.innerWidth - document.documentElement.clientWidth;
                 header.style.paddingRight = scrollbarW + 'px';
-                heroBg.style.right = scrollbarW + 'px';
+                heroBg && (heroBg.style.right = scrollbarW + 'px');
             },
             destroy: () => {
                 header.style.paddingRight = '';
-                heroBg.style.right = '';
+                heroBg && (heroBg.style.right = '');
             }
         },
     });
